@@ -1,0 +1,4 @@
+rasa==3.6.0
+rasa-sdk==3.6.0
+supabase
+boto3

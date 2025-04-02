@@ -1,0 +1,32 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - order_food
+  - oversee_operations
+entities:
+  - food_item
+  - quantity
+  - customization
+  - product_tier
+  - restaurant_id
+  - pos_device_id
+slots:
+  food_item: { type: text }
+  quantity: { type: text }
+  customization: { type: text }
+  product_tier: { type: text }
+  restaurant_id: { type: text }
+  pos_device_id: { type: text }
+  ordered_items: { type: list }
+  order_id: { type: text }
+responses:
+  utter_greet:
+    - text: "Welcome to ViLaBot OS—Brick Ultra here with ViLaPOS!"
+  utter_goodbye:
+    - text: "ViLaBot OS signing off!"
+  utter_confirm_order:
+    - text: "Order confirmed: {quantity} {food_item} {customization}, ID: {order_id}, ETA: {eta} mins—ViLaPOS printing!"
+actions:
+  - action_oversee_operations
+  - action_order_food
