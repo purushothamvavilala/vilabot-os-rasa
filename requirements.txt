@@ -1,4 +1,4 @@
-rasa==3.6.0
-rasa-sdk==3.6.0
+rasa==3.4.18
+rasa-sdk==3.4.18
 supabase
 boto3
